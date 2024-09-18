@@ -1,0 +1,12 @@
+@media only screen and (max-width: 1440px){
+    body {
+        width: 80%;
+    }
+    
+}
+
+@media only screen and (max-width: 1200px){
+    .line {
+        display: none;
+    }
+}
