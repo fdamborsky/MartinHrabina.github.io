@@ -10,3 +10,19 @@
         display: none;
     }
 }
+
+@media only screen and (max-width: 1000px){
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .sidebar {
+        width: 100%;
+    }
+}
+
