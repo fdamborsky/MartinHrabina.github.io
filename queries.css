@@ -1,8 +1,14 @@
-@media only screen and (max-width: 1440px){
+@media only screen and (max-width: 1450px){
     body {
         width: 80%;
     }
-    
+    #lp_textbox h2{
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 1300px){
 }
 
 @media only screen and (max-width: 1200px){
@@ -18,11 +24,128 @@
     .menu-button {
         display: block;
     }
-}
+    #lp_imgbox img {
+        height: 70%;
+        border-radius: 70px;
+    }
+    #lp_textbox h1{
+        font-size: 65px;
+        line-height: 50px;
+    }
 
-@media only screen and (max-width: 500px){
-    .sidebar {
-        width: 100%;
+    #lp_textbox h2{
+        font-size: 17px;
     }
 }
 
+@media only screen and (max-width: 800px){
+    #lp_imgbox img {
+        height: 60%;
+        border-radius: 60px;
+    }
+    #lp_textbox h1{
+        font-size: 60px;
+        line-height: 50px;
+    }
+
+    #lp_textbox h2{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    #lp_imgbox img {
+        height: 50%;
+        border-radius: 50px;
+    }
+    #lp_textbox h1{
+        font-size: 50px;
+        line-height: 40px;
+    }
+
+    #lp_textbox h2{
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #lp_imgbox img {
+        height: 40%;
+        border-radius: 50px;
+    }
+    #lp_textbox h1{
+        font-size: 45px;
+        line-height: 40px;
+    }
+
+    #lp_textbox h2{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    body {
+        width: 90%;
+    }
+    .sidebar {
+        width: 100%;
+    }
+
+    header li a {
+        font-size: 30px;
+    }
+    #lp_textbox h1{
+        font-family: RobotoBlack;
+        font-size: 44px;
+        line-height: 45px;
+        font-weight: 500;
+    }
+
+    #lp_textbox h2{
+        font-size:10px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    #landing-page {
+        height: 75vh;
+    }
+
+    #lp_container{
+        flex-direction: column-reverse;
+        justify-content: space-around;
+
+        width: 100%;
+        height: auto;
+    }
+
+    #lp_imgbox {
+        width: 100%;
+    }
+
+    #lp_imgbox img {
+        width: 80%;
+        height: auto;
+        border-radius: 70px;
+    }
+
+    #lp_textbox {
+        padding-top: 20px;
+
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+    }
+
+    #lp_textbox h1{
+        font-size: 57px;
+        line-height: 50px;
+    }
+
+    #lp_textbox h2{
+        font-size: 14px;
+    }
+    header li a {
+        font-size: 20px;
+    }
+}
