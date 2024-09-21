@@ -1,12 +1,13 @@
-function showSidebar(){
-    const sidebar = document.querySelector('.sidebar')
-    sidebar.style.display = 'flex'
+function showSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.classList.add('active'); // Add the active class to slide in
 }
 
-function hideSidebar(){
-    const sidebar = document.querySelector('.sidebar')
-    sidebar.style.display = 'none'
+function hideSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.classList.remove('active'); // Remove the active class to slide out
 }
+
 
 window.addEventListener("load", () => {
     const loader = document.querySelector(".loader");
@@ -48,17 +49,16 @@ window.addEventListener("load", () => {
   window.addEventListener('resize', changeText);
 
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    console.log(entry)
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-    }
-    else {
-      entry.target.classList.remove('show')
-    }
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        // Stop observing the element after the first intersection
+        observer.unobserve(entry.target);
+      }
+    });
   });
-});
-
-const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((el) => observer.observe(el));
+  
+  const hiddenElements = document.querySelectorAll('.hidden');
+  hiddenElements.forEach((el) => observer.observe(el));
+  
