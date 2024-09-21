@@ -43,6 +43,20 @@ body{
     /**border: 2px dotted green;**/
 }
 
+.hidden {
+    scale: 0.75;
+    transition: all 2s;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.show {
+    scale: 1;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+}
+
+
 
 
 /****LOADER****/
@@ -92,7 +106,7 @@ body{
 
 nav {
     width: 100%;
-    height: 100px;  
+    height: 10vh;  
     display: flex;
     justify-content: center;
 }
@@ -134,14 +148,6 @@ header nav a img:hover{
     filter: brightness(100%)
 }
 
-.line {
-    height: 1px;
-    width: 100px;
-    background: black;
-    cursor: none;
-    user-select: none;
-    pointer-events: none;
-}
 
 header nav a#noclick {
     cursor: none;
@@ -157,6 +163,22 @@ header nav li:first-child{
 header nav li:first-child span {
     font-family: RobotoBlack;
 }
+
+.line {
+    height: 1px;
+    width: 100px;
+    background: black;
+    cursor: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+header nav a#noclick {
+    cursor: none;
+    user-select: none;
+    pointer-events: none;
+}
+
 
 .sidebar{
     position: fixed;
@@ -236,6 +258,9 @@ header nav li:first-child span {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    cursor: none;
+    user-select: none;
+    pointer-events: none;
 }
 
 #lp_imgbox {
@@ -244,11 +269,17 @@ header nav li:first-child span {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: none;
+    user-select: none;
+    pointer-events: none;
 }
 
 #lp_imgbox img {
     height: 100%;
     border-radius: 100px;
+    cursor: none;
+    user-select: none;
+    pointer-events: none;
 }
 
 #lp_textbox{
@@ -265,7 +296,8 @@ header nav li:first-child span {
 #lp_textbox h1{
     width: 100%;
 
-    font-family: RobotoBlack;
+    font-family: Roboto;
+    font-weight: 900;
     font-size: 90px;
     line-height: 80px;
 
@@ -286,20 +318,18 @@ header nav li:first-child span {
 /****KOMUNITY****/
 
 #community {
-    height: 100vh;
     width: 100%;
-
     border: 2px solid gold;
+    margin-bottom: 50px;
+
 }
 
 #academy {
     position: relative;
     width: 100%;
-    
-    border: 2px dotted gray;
 }
 
-.line {
+#community .left_line {
     position: absolute;
     left: -50px;
     height: 100%;
@@ -307,21 +337,25 @@ header nav li:first-child span {
     background-color: #000000;
 }
 
+
 .main {
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
-
-    border: dashed 2px red;
+    flex-direction: row;
 }
 
 .text-box {
-    width: 60%;
-    border: 2px solid green;
+    width: 50%;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .text-box h1{
-    font-family: RobotoBlack;
+    font-family: Roboto;
     font-size: 45px;
 }
 
@@ -337,21 +371,28 @@ header nav li:first-child span {
 
 
 .image-box { 
-    border: 2px solid #FF4654;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    cursor: none;
+    user-select: none;
+    pointer-events: none;
 }
 
 .image-box img {
-    height: 292px;
     border-radius: 50px;
+    width: 100%;
 }
 
 .buttons {
     margin-top: 20px;
-    width: 60%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-
-    border: 2px solid salmon;
+    justify-content: flex-start;
+    gap: 10%;
+    user-select: none;
 }
 
 .ziskat_btn {
@@ -409,28 +450,76 @@ header nav li:first-child span {
 }
 
 .testimonials {
-
-    margin: 50px auto;
+    position: relative;
+    margin: 20px auto 0 auto;
+    padding-top: 50px;
+    padding-bottom: 10px;
     margin-bottom: 0px;
     width: 80%;
 
+    overflow: hidden;
     display: flex;
-    justify-content: space-between;
+    cursor: none;
+    user-select: none;
+}
 
-    border: 2px solid darkturquoise;
+.testimonials:before,
+.testimonials:after{
+    position: absolute;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    content: "";
+    z-index: 999;
+}
+
+.testimonials:before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), #f6f6f6);
+
+}
+
+.testimonials:after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), #f6f6f6);
+
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+
+    animation: 25s slide infinite linear;
+}
+
+.testimonials:hover .slider:hover{
+    animation-play-state: paused;
 }
 
 .box {
     position: relative;
     border: 0.5px solid #727272;
+    margin: 0rem 3rem;
     border-radius: 50px;
-    width: 320px;
-    height: 250px;
+    width: 330px;
+    height: 255px;
+
 
     -webkit-box-shadow: 5px 5px 4px 0px rgba(0,0,0,.25);
     -moz-box-shadow: 5px 5px 4px 0px rgba(0,0,0,.25);
     box-shadow: 5px 5px 4px 0px rgba(0,0,0,.25);
 }
+
 
 .box .photo {
     position: absolute;
@@ -462,8 +551,29 @@ header nav li:first-child span {
 .testimonials_image {
     width: 100%;
     text-align: center;
+    padding-top: 5px;
 }
 
 .testimonials_image img {
     height: 25px;
+}
+
+
+
+#free_community {
+    margin-top: 30px;
+    width: 100%;
+    position: relative;
+}
+
+#free_community .right_line {
+    position: absolute;
+    right: -50px;
+    height: 100%;
+    width: 1px;
+    background-color: #FF4654;
+}
+
+.mainreverse {
+    flex-direction: row-reverse;
 }
