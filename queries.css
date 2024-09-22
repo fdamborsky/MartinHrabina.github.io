@@ -11,6 +11,15 @@
     .text-box h2{
         font-size: 20px;
     }
+    #spotify_textbox h1{
+        font-family: Roboto;
+        font-size: 37px;
+    }
+    
+    #spotify_textbox h2{
+        font-size: 20px;
+        font-family: RobotoThin;
+    }
 
 }
 
@@ -26,6 +35,15 @@
     }
     .text-box h2{
         font-size: 20px;
+    }
+    #spotify_textbox h1{
+        font-family: Roboto;
+        font-size: 35px;
+    }
+    
+    #spotify_textbox h2{
+        font-size: 20px;
+        font-family: RobotoThin;
     }
     .text-box {
         width: 50%;
@@ -54,6 +72,15 @@
     .text-box h2{
         font-size: 20px;
     }
+    #spotify_textbox h1{
+        font-family: Roboto;
+        font-size: 30px;
+    }
+    
+    #spotify_textbox h2{
+        font-size: 20px;
+        font-family: RobotoThin;
+    }
 }
 
 @media only screen and (max-width: 1200px){
@@ -72,9 +99,38 @@
     .testimonials {
         width: 100%;
     }
+    .sponsor h1{
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width:1100px){
+    .sponsor img {
+        width: 150px;
+    }
+    .sponsor2 img {
+        width: 400px;
+    }
 }
 
 @media only screen and (max-width: 1000px){
+    .sponsor img {
+        width: 150px;
+    }
+    .sponsor2 img {
+        width: 315px;
+    }
+    .sponsor h1{
+        font-size: 25px;
+    }
+
+    .spotify_container {
+        width: 100%;
+    }
+    .spotify_container img {
+        height: 100px;
+    }
+    
     .box {
         margin: 0rem 1rem;
     }
@@ -115,12 +171,12 @@
     }
     .image-box {
         height: 40%;
-        width: 100%;
+        width: 80%;
     }
 
     .image-box img {
         border-radius: 30px;
-        height: 100%;
+        height: 70%;
     }
 
     .buttons {
@@ -142,48 +198,146 @@
 }
 
 @media only screen and (max-width: 800px){
-    #lp_imgbox img {
-        height: 60%;
-        border-radius: 60px;
+    .image-box {
+        height: 40%;
+        width: 90%;
     }
+
+    #landing-page {
+        height: 90vh;
+    }
+
+    #lp_container{
+        flex-direction: column-reverse;
+        justify-content: space-around;
+
+        width: 100%;
+        height: auto;
+    }
+
+    #lp_imgbox {
+        width: 100%;
+    }
+
+    #lp_imgbox img {
+        width: 60%;
+        height: auto;
+        border-radius: 70px;
+    }
+
+    #lp_textbox {
+        padding-top: 20px;
+
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+    }
+
     #lp_textbox h1{
-        font-size: 60px;
-        line-height: 50px;
+        font-size: 90px;
+        line-height: 80px;
     }
 
     #lp_textbox h2{
-        font-size: 15px;
+        font-size: 20px;
     }
-    
+
+    #sponsors {
+        flex-direction: column;
+        height: 50vh;
+    }
+    .sponsor {
+        width: 100%;
+    }
+    .sponsor1 {
+        border-top: 2px solid #000;
+        padding: 40px 0px;
+    }
+    .sponsor2{
+        border: none;
+    }
+    .sponsor img {
+        width: 200px;
+    }
+    .sponsor2 img {
+        width: 450px;
+    }
+    .sponsor h1{
+        font-size: 35px;
+    }
+        
 }
 
 @media only screen and (max-width: 700px){
+    .image-box {
+        height: 40%;
+        width: 100%;
+    }
+    .left_line , .right_line {
+        display: none;
+    }
     #lp_imgbox img {
         height: 50%;
         border-radius: 50px;
     }
     #lp_textbox h1{
-        font-size: 50px;
-        line-height: 40px;
+        font-size: 90px;
+        line-height: 80px;
     }
 
     #lp_textbox h2{
-        font-size: 13px;
+        font-size: 20px;
+    }
+    .spotify_container{
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #spotify_textbox h2{
+        display: none;
+    }
+    #spotify_textbox h1 {
+        font-size: 40px;
     }
 }
 
 @media only screen and (max-width: 600px){
+    .slider{
+        display: none;
+    }
+    
+    .testimonials:after, .testimonials:before {
+        display: none;
+    }
+
+    #slider-click {
+        display: block;
+    }
+
+
+
+    .sponsor img {
+        width: 180px;
+    }
+    .sponsor2 img {
+        width: 400px;
+    }
+    .sponsor h1{
+        font-size: 30px;
+    }
+
     #lp_imgbox img {
-        height: 40%;
-        border-radius: 50px;
+        width: 60%;
+        height: auto;
+        border-radius: 70px;
     }
     #lp_textbox h1{
-        font-size: 45px;
-        line-height: 40px;
+        font-size: 90px;
+        line-height: 80px;
     }
 
     #lp_textbox h2{
-        font-size: 10px;
+        font-size: 20px;
     }
     .text-box h1{
         font-size: 25px;
@@ -193,8 +347,7 @@
     }
 
     .box {
-        width: 290px;
-        height: 230px;
+        scale: 0.9;
     }
     .box .photo {
         height: 60px;
@@ -214,8 +367,30 @@
 }
 
 @media only screen and (max-width: 500px){
+    #slider-click {
+        scale: 0.8;
+    }
+
+    .testimonials_textbox2 {
+        width: 90%;
+    }
+
+    .sponsor img {
+        width: 160px;
+    }
+    .sponsor2 img {
+        width: 350px;
+    }
+    .sponsor h1{
+        font-size: 30px;
+    }
+
+    html {
+        overflow-x: hidden;
+    }
     body {
         width: 90%;
+        margin: 0 auto;
     }
 
     header li a {
@@ -223,13 +398,13 @@
     }
     #lp_textbox h1{
         font-family: RobotoBlack;
-        font-size: 44px;
+        font-size: 60px;
         line-height: 45px;
         font-weight: 500;
     }
 
     #lp_textbox h2{
-        font-size:10px;
+        font-size:18px;
     }
 
     .text-box h1{
@@ -239,6 +414,38 @@
 }
 
 @media only screen and (max-width: 400px){
+    #slider-click {
+        scale: 0.8;
+    }
+    .testimonials_textbox2 h2{
+        font-size: 16px;
+    }
+    #slider-click {
+        margin: 0 auto 0px auto;
+    }
+
+    .spotify_container img {
+        height: 80px;
+    }
+    .sponsor img {
+        width: 150px;
+    }
+    .sponsor2 img {
+        width: 270px;
+    }
+    .sponsor h1{
+        font-size: 20px;
+    }
+    .sponsor1 {
+        padding-bottom: 20px;
+    }
+    
+    .buttons {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
     #landing-page {
         height: 90vh;
     }

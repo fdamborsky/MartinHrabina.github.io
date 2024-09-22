@@ -41,7 +41,6 @@ body{
     overflow-x: hidden;
     background-color: #f6f6f6;
     /**border: 2px dotted green;**/
-    touch-action: pan-y;
 }
 
 .hidden {
@@ -329,7 +328,6 @@ header nav a#noclick {
 
 #community {
     width: 100%;
-    border: 2px solid gold;
     margin-bottom: 50px;
 
 }
@@ -337,14 +335,17 @@ header nav a#noclick {
 #academy {
     position: relative;
     width: 100%;
+    padding-bottom: 50px;
 }
 
-#community .left_line {
+.left_line {
     position: absolute;
+    top: 0;
     left: -50px;
     height: 100%;
     width: 1px;
     background-color: #000000;
+    z-index: 999;
 }
 
 
@@ -520,8 +521,8 @@ header nav a#noclick {
     border: 0.5px solid #727272;
     margin: 0rem 3rem;
     border-radius: 50px;
-    width: 330px;
-    height: 255px;
+    width: 350px;
+    height: 270px;
 
 
     -webkit-box-shadow: 5px 5px 4px 0px rgba(0,0,0,.25);
@@ -540,7 +541,7 @@ header nav a#noclick {
 
 .testimonials_textbox {
     height: 85%;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
 .testimonials_textbox h1{
@@ -548,6 +549,16 @@ header nav a#noclick {
     font-size: 20px;
     font-family: Roboto;
     margin-bottom: 5px;
+    cursor: none;
+    user-select: none;
+    pointer-events: none;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
 }
 
 .testimonials_textbox h2{
@@ -555,6 +566,16 @@ header nav a#noclick {
     font-family: RobotoThin;
 
     padding: 0px 15px;
+    cursor: none;
+    user-select: none;
+    pointer-events: none;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
 }
 
 .testimonials_image {
@@ -565,6 +586,13 @@ header nav a#noclick {
 
 .testimonials_image img {
     height: 25px;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
 }
 
 
@@ -573,6 +601,7 @@ header nav a#noclick {
     margin-top: 30px;
     width: 100%;
     position: relative;
+    padding-bottom: 50px;
 }
 
 #free_community .right_line {
@@ -586,3 +615,258 @@ header nav a#noclick {
 .mainreverse {
     flex-direction: row-reverse;
 }
+
+
+
+
+#spotify {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 0px 0px 0px;
+}
+
+.spotify_container , .textndimage{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spotify_container img {
+    height: 135px;
+}
+
+.poslechnout_btn {
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    background-color: #FF4654;
+    border: 3px solid #000;
+
+    font-size: 24px;
+    font-family: RobotoLight;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+
+    -webkit-box-shadow: 10px 5px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+    box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);   
+
+    transition: 0.3s;
+}
+
+.poslechnout_btn:hover{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;  
+}
+
+#spotify_textbox {
+    padding: 0px 20px;
+}
+
+#spotify_textbox h1{
+    font-family: Roboto;
+    font-size: 45px;
+}
+
+#spotify_textbox h2{
+    font-size: 25px;
+    font-family: RobotoThin;
+}
+
+
+#sponsors {
+    height: 25vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 50px;
+}
+
+.sponsor {
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.sponsor img {
+    width: 200px;
+}
+
+.sponsor2 {
+    border-left: 2px solid #000;
+}
+.sponsor2 img {
+    width: 450px;
+}
+
+.sponsor h1 {
+    font-family: RobotoThin;
+    font-size: 40px;
+}
+
+.sponsor h1 span {
+    font-family: Roboto;
+}
+
+
+.mrkni_btn {
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    background-color: #FF4654;
+    border: 3px solid #000;
+
+    font-size: 24px;
+    font-family: RobotoLight;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+
+    -webkit-box-shadow: 10px 5px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+    box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);   
+
+    transition: 0.3s;
+}
+
+.mrkni_btn:hover{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;  
+}
+
+
+#slider-click {
+    display: none;
+    background-color: #f6f6f6;
+    border-radius: 50px;
+    width: 350px;
+    -webkit-box-shadow: 5px 5px 30px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 30px -4px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 30px -4px rgba(0,0,0,0.75);
+    margin: 0 auto 40px auto;
+}
+
+
+
+.slider-container {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.slider-container .photo {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 80px;
+}
+
+.testimonials_textbox2 {
+    height: 85%;
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.testimonials_textbox2 h1{
+    text-align: center;
+    font-size: 25px;
+    font-family: Roboto;
+    margin-bottom: 5px;
+    cursor: none;
+    user-select: none;
+    pointer-events: none;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+.testimonials_textbox2 h2{
+    font-size: 18px;
+    font-family: RobotoThin;
+    text-align: center;
+
+    padding: 0px 15px;
+    cursor: none;
+    user-select: none;
+    pointer-events: none;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+.testimonials_image2 {
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.testimonials_image2 img {
+    height: 25px;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+.prev {
+    position: absolute;
+    top: 45%;
+    left:-20px;
+}
+
+.next {
+    position: absolute;
+    right: -20px;
+    top: 45%;
+}
+
+#slider-click button{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+    background-color: #f6f6f6;
+    border: 1px solid #FF4654;
+    color: #FF4654;
+    cursor: pointer;
+    border-radius: 100%;
+  }
