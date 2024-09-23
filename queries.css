@@ -2,6 +2,11 @@
         .testimonials_textbox h2{
             font-size: 15px;
         }
+        @media only screen and (max-width: 1400px){
+            .sponsor h1{
+                font-size: 25px;
+            }
+        }
     }
 
 
