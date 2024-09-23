@@ -1,3 +1,55 @@
+@media only screen and (max-height: 750px){
+    #sponsors{
+        margin-top: 80px !important;
+        padding-top: 20px !important;
+   }
+}
+
+
+@media only screen and (max-height: 600px){
+    #lp_textbox h1{
+        font-size: 70px !important;
+        line-height: 60px !important;
+    }
+    #lp_textbox h2{
+        font-size: 18px !important;
+    }
+
+}
+
+@media only screen and (max-height: 500px){
+    #lp_textbox h1{
+        font-size: 60px !important;
+        line-height: 50px !important;
+    }
+    #lp_textbox h2{
+        font-size: 16px !important;
+    }
+    #lp_imgbox img {
+        width: 40% !important;
+        border-radius: 50px !important;
+    }
+    .sponsor1 {
+        border: none !important;
+    }
+}
+
+@media only screen and (max-height: 400px){
+    #lp_textbox h1{
+        font-size: 45px !important;
+        line-height: 40px !important;
+    }
+    #lp_textbox h2{
+        font-size: 16px !important;
+    }
+    #lp_imgbox img {
+        width: 35% !important;
+        border-radius: 50px !important;
+    }
+}
+
+
+
 @media only screen and (max-width: 1750px){
     body {
         width: 80%;
