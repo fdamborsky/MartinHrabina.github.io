@@ -1,3 +1,11 @@
+    @supports (-webkit-appearance: none) {
+        .testimonials_textbox h2{
+            font-size: 15px;
+        }
+    }
+
+
+
 @media only screen and (max-height: 750px){
     #sponsors{
         margin-top: 80px !important;
@@ -133,6 +141,20 @@
         font-size: 20px;
         font-family: RobotoThin;
     }
+    .sponsor h1{
+        font-size: 25px;
+    }
+    .sponsor img {
+        height: 40px;
+    }
+    .sponsor2 img {
+        height: 40px;
+    }
+    
+    .sponsor3 img {
+        height: 40px;
+    }
+    
 }
 
 @media only screen and (max-width: 1200px){
@@ -151,30 +173,29 @@
     .testimonials {
         width: 100%;
     }
-    .sponsor h1{
-        font-size: 35px;
-    }
 }
 
 @media only screen and (max-width:1100px){
-    .sponsor img {
-        width: 150px;
+    #sponsors{
+        height: 50vh;
+        width: 100%;
+        flex-wrap: wrap;
+        border-top: 2px solid #000;
     }
-    .sponsor2 img {
-        width: 400px;
+    .sponsor {
+        height: 50%;
+        width: 50%;
     }
+    .sponsor2 {
+        border-left: none;
+        border-right: none;
+    }
+    
 }
 
 @media only screen and (max-width: 1000px){
-    .sponsor img {
-        width: 150px;
-    }
-    .sponsor2 img {
-        width: 315px;
-    }
-    .sponsor h1{
-        font-size: 25px;
-    }
+    
+
 
     .spotify_container {
         width: 100%;
@@ -296,23 +317,30 @@
 
     #sponsors {
         flex-direction: column;
-        height: 50vh;
+        height: auto;
+        flex-wrap: nowrap;
+        border-top: none;
+
+        border-top: 2px solid #000;
+        margin-top: 100px;
+        padding-top: 50px;
     }
     .sponsor {
         width: 100%;
-    }
-    .sponsor1 {
-        border-top: 2px solid #000;
-        padding: 40px 0px;
+        margin-bottom: 50px;
     }
     .sponsor2{
         border: none;
     }
     .sponsor img {
-        width: 200px;
+        height: 60px;
     }
     .sponsor2 img {
-        width: 450px;
+        height: 60px;
+    }
+    
+    .sponsor3 img {
+        height: 60px;
     }
     .sponsor h1{
         font-size: 35px;
@@ -370,15 +398,6 @@
 
 
 
-    .sponsor img {
-        width: 180px;
-    }
-    .sponsor2 img {
-        width: 400px;
-    }
-    .sponsor h1{
-        font-size: 30px;
-    }
 
     #lp_imgbox img {
         width: 60%;
@@ -429,14 +448,18 @@
         width: 90%;
     }
 
-    .sponsor img {
-        width: 160px;
-    }
-    .sponsor2 img {
-        width: 350px;
-    }
     .sponsor h1{
         font-size: 30px;
+    }
+    .sponsor img {
+        height: 50px;
+    }
+    .sponsor2 img {
+        height: 50px;
+    }
+    
+    .sponsor3 img {
+        height: 50px;
     }
 
     html {
@@ -468,6 +491,12 @@
 }
 
 @media only screen and (max-width: 400px){
+    .zjistit_btn:hover, .ziskat_btn:hover, .mrkni_btn:hover{
+        -webkit-box-shadow: 10px 5px 0px 0px rgba(0,0,0,1);
+        -moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+        box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);   
+    }
+
     #slider-click {
         scale: 0.8;
     }
@@ -479,19 +508,20 @@
     }
 
     .spotify_container img {
-        height: 80px;
+        height: 70px;
     }
     .sponsor img {
-        width: 150px;
+        height: 40px;
     }
     .sponsor2 img {
-        width: 270px;
+        height: 40px;
+    }
+    
+    .sponsor3 img {
+        height: 40px;
     }
     .sponsor h1{
-        font-size: 20px;
-    }
-    .sponsor1 {
-        padding-bottom: 20px;
+        font-size: 25px;
     }
     
     .buttons {
