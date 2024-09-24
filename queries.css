@@ -5,11 +5,6 @@
         #sponsors {
             height: auto !important;
         }
-        @media only screen and (max-width: 1400px){
-            .sponsor h1{
-                font-size: 25px;
-            }
-        }
         #sponsors {
             height: auto !important;
         }
@@ -153,7 +148,7 @@
         font-family: RobotoThin;
     }
     .sponsor h1{
-        font-size: 25px;
+        font-size: 23px;
     }
     .sponsor img {
         height: 40px;
@@ -192,6 +187,7 @@
         width: 100%;
         flex-wrap: wrap;
         border-top: 2px solid #000;
+        padding-top: 50px ;
     }
     .sponsor {
         height: 50%;
@@ -200,6 +196,10 @@
     .sponsor2 {
         border-left: none;
         border-right: none;
+    }
+    .sponsor3 {
+        padding-top: 50px ;
+
     }
     
 }
@@ -282,6 +282,10 @@
 }
 
 @media only screen and (max-width: 800px){
+    .sponsor3 {
+        padding-top: 0px ;
+
+    }
     .image-box {
         height: 40%;
         width: 90%;
