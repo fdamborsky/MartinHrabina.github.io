@@ -33,6 +33,7 @@
 
 :root {
     font-family: Roboto;
+    --font-color: #000;
 }
 
 body{
@@ -41,6 +42,10 @@ body{
     overflow-x: hidden;
     background-color: #f6f6f6;
     /**border: 2px dotted green;**/
+}
+
+h1,h2,h3,p{
+    color: var(--font-color) ;
 }
 
 .hidden {
@@ -87,7 +92,7 @@ body{
     content: "";
     width: 75px;
     height: 75px;
-    border: 15px solid #000000;
+    border: 15px solid var(--font-color);
     border-top-color: #FF4654;
     border-radius: 50%;
     animation: loading 0.75s ease infinite;
@@ -130,7 +135,7 @@ header nav a {
     display: flex;
     padding: 0px 10px;
     align-items: center;
-    color: black;
+    color: #000;
     font-weight: 100;
     font-size: 36px;
     user-select: none;
@@ -169,7 +174,7 @@ header nav li:first-child span {
 .line {
     height: 1px;
     width: 100px;
-    background: black;
+    background: var(--font-color);
     cursor: none;
     user-select: none;
     pointer-events: none;
